@@ -16,7 +16,7 @@ Feature: Directory Service
     And I receive a token
 
     Examples:
-      | credentials
+      | credentials |
       | {"username":"admin","password":"password123"}|
 
   Scenario Outline: get all existing bookings

@@ -1,19 +1,22 @@
 # new feature
 # Tags: optional
 
+# source
+# https://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-CreateBooking
+
 Feature: Directory Service
 
   As a developer
   I want to be able to send requests through Herokuapp
 
   Scenario Outline: create token
-    Given A valid <credentials>
+    Given Valid <credentials>
     When I send POST request to API
     Then I get response code 200
     And I receive a token
 
     Examples:
-      | credentials
+      | credentials |
       | {"username":"admin","password":"password123"}|
 
   Scenario Outline: get all existing bookings
@@ -35,7 +38,7 @@ Feature: Directory Service
 
 
   Scenario Outline: create a booking
-    Given A booking <request>
+    Given Booking <request>
     When I send POST request to /URL
     Then I get response code 201
 
