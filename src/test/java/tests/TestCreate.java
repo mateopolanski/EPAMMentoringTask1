@@ -5,7 +5,6 @@ import org.junit.Test;
 import utilitity.*;
 import model.PostRequest;
 
-import java.util.Date;
 
 import static org.apache.http.HttpStatus.SC_OK;
 import static utilitity.Properties.*;

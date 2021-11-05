@@ -5,9 +5,9 @@ import model.PostRequest;
 import utilitity.RestSteps;
 import static io.restassured.RestAssured.given;
 
-public class RestController  {
+public class RestController extends RestSteps {
     public Response post(PostRequest body) {
-        return
+        return super
                 .given()
                 .body(body)
                 .basePath("")
@@ -20,7 +20,7 @@ public class RestController  {
     }
 
     public Response get() {
-        return
+        return super
                 .given()
                 .when()
                 .basePath("/9")

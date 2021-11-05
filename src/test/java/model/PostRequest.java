@@ -8,8 +8,8 @@ public class PostRequest {
     private String lastname;
     private double Number;
     private boolean depositpaid;
-    private Date checkin;
-    private Date checkout;
+    private String checkin;
+    private String checkout;
     private String additionalneeds;
 
     public String getFirstname() {
@@ -36,6 +36,18 @@ public class PostRequest {
         Number = number;
     }
 
+    public String getCheckin() {
+        return checkin;
+    }
+
+    public void setCheckin(String checkin) {
+        this.checkin = checkin;
+    }
+
+    public void setCheckout(String checkout) {
+        this.checkout = checkout;
+    }
+
     public boolean isDepositpaid() {
         return depositpaid;
     }
@@ -44,21 +56,6 @@ public class PostRequest {
         this.depositpaid = depositpaid;
     }
 
-    public Date getCheckin() {
-        return checkin;
-    }
-
-    public void setCheckin(Date checkin) {
-        this.checkin = checkin;
-    }
-
-    public Date getCheckout() {
-        return checkout;
-    }
-
-    public void setCheckout(Date checkout) {
-        this.checkout = checkout;
-    }
 
     public String getAdditionalneeds() {
         return additionalneeds;

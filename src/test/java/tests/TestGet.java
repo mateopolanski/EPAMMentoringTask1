@@ -18,6 +18,7 @@ public class TestGet extends BaseTests {
         softly.assertThat(response.jsonPath().get("data[1].checkout").toString()).isEqualTo("2019-11-03");
         softly.assertAll();
 
+        // try notNull
     }
 
 }
